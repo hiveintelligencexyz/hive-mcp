@@ -1,0 +1,55 @@
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+build/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage & tests
+coverage/
+*.lcov
+
+# Debug files
+*.local
+*.log
+
+# Optional npm cache directory
+.npm/
+
+# Eslint, Prettier, Jest cache
+.eslintcache
+jest.config.js
+*.ts-jest-cache
+
+# History
+.node_repl_history
+
+# Other generated artifacts
+*.tgz

@@ -1,0 +1,34 @@
+{
+  "name": "hive-mcp",
+  "version": "0.1.2",
+  "description": "MCP server for Hive Intelligence crypto and Web3 search",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "start": "node build/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.12.1",
+    "dotenv": "^16.5.0",
+    "hive-intelligence": "0.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.8.3"
+  },
+  "bin": {
+    "hive-mcp": "./build/index.js"
+  },
+  "files": [
+    "build/**/*",
+    "README.md",
+    "LICENSE"
+  ]
+}
